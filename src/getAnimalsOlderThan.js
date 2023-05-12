@@ -6,4 +6,4 @@ const getAnimalsOlderThan = (animal, age) => {
   return minimumAge.residents.every((resident) => resident.age >= age);
 };
 
-module.exports = getAnimalsOlderThan
+module.exports = getAnimalsOlderThan;
