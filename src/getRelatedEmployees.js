@@ -14,7 +14,7 @@ const getRelatedEmployees = (managerId) => {
   }
   const managerIds = data.employees.filter((idManager) =>
     idManager.managers.includes(managerId));
-  return managerIds.map((elemento) => `${elemento.firstName} ${elemento.lastName}`);
+  return managerIds.map((manager) => `${manager.firstName} ${manager.lastName}`);
 };
 
 module.exports = { isManager, getRelatedEmployees };
